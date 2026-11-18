@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 /**
  * STATIC_EXPORT=1 のときは、静的サイト（HTML・画像などのファイル一式）として out/ に書き出す。
- *   GitHub Pages（デモ）… BASE_PATH=/hinata-entertainment、CONTACT_ENDPOINT は空（フォームは送信しない）
+ *   GitHub Pages（デモ）… BASE_PATH=/hinata-agency、CONTACT_ENDPOINT は空（フォームは送信しない）
  *   Xserver（本番）     … BASE_PATH は空、CONTACT_ENDPOINT=/contact.php（PHPでメール送信）
  * 書き出しには scripts/deploy-pages.sh・scripts/deploy-xserver.sh を使う。
  */

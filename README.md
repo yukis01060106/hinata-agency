@@ -42,7 +42,7 @@ Next.js 16（App Router）＋ TypeScript ＋ Tailwind CSS v4 ＋ GSAP（ScrollTr
 Node.js 20.9 以上が必要です。
 
 ```bash
-cd ~/Desktop/hinata-entertainment
+cd ~/Desktop/hinata-agency
 npm install        # 初回のみ
 npm run dev        # 開発サーバー起動 → http://localhost:3000
 ```
@@ -82,7 +82,7 @@ npm run deploy:xserver                # 書き出してアップロード
 
 ## GitHub Pages でデモを見せる
 
-`npm run deploy:pages` で https://yukis01060106.github.io/hinata-entertainment/ に公開します。デモなので、検索エンジンには載せず、フォームも送信しません。
+`npm run deploy:pages` で https://yukis01060106.github.io/hinata-agency/ に公開します。デモなので、検索エンジンには載せず、フォームも送信しません。
 
 ---
 
@@ -90,16 +90,16 @@ npm run deploy:xserver                # 書き出してアップロード
 
 ### 1. GitHub にアップする
 ```bash
-cd ~/Desktop/hinata-entertainment
+cd ~/Desktop/hinata-agency
 git add -A
 git commit -m "Hinata Agency 公式サイト"
-gh repo create hinata-entertainment --private --source=. --push
+gh repo create hinata-agency --private --source=. --push
 ```
 （`gh` を使わない場合は、GitHub上で空のリポジトリを作り、表示される `git remote add origin ...` と `git push -u origin main` を実行します）
 
 ### 2. Vercel にインポートする
 1. https://vercel.com に GitHub アカウントでログインする
-2. **Add New… → Project** から `hinata-entertainment` を **Import** する
+2. **Add New… → Project** から `hinata-agency` を **Import** する
 3. Framework は自動で **Next.js** が選ばれるので、そのまま **Deploy** する
 
 以後は、GitHub に push するたびに自動で公開されます。
